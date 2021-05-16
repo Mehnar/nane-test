@@ -9,7 +9,7 @@ class Api {
         Accept: 'application/json',
         'Content-Type': 'application/json; charset=utf-8',
       },
-      withCredentials: true,
+      withCredentials: false,
       credentials: 'include',
     });
   }

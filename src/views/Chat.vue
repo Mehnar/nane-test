@@ -132,7 +132,8 @@ export default {
         wrapper.scrollTop = wrapper.scrollHeight - wrapper.clientHeight;
       },
     },
-    async allMessages() {
+    async allMessages(newVal) {
+      if (!newVal.length) return;
       await this.$nextTick();
 
       const { wrapper } = this.$refs;

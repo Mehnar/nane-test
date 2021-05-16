@@ -138,6 +138,7 @@ export default {
     } catch (e) {
       if (e.response.status === 404) router.push({ name: 'default' });
       console.log(e.response);
+      throw e;
     } finally {
       commit(types.MESSAGES_IS_LOADING_SET, false);
     }
