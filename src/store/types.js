@@ -1,0 +1,29 @@
+// actions
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
+
+export const INIT_CONNECT = 'INIT_CONNECT';
+
+export const ROOMS_LIST_FETCH = 'ROOMS_LIST_FETCH';
+export const ROOM_INFO_FETCH = 'ROOM_INFO_FETCH';
+
+export const MESSAGE_SEND = 'MESSAGE_SEND';
+export const MESSAGES_FETCH = 'MESSAGES_FETCH';
+
+// mutations
+export const LOGIN_SET = 'LOGIN_SET';
+export const SOCKET_SET = 'SOCKET_SET';
+export const SOCKET_ERROR_SET = 'SOCKET_ERROR_SET';
+
+export const ROOMS_SET = 'ROOMS_SET';
+export const ROOMS_IS_LOADING_SET = 'ROOMS_IS_LOADING_SET';
+export const ROOM_CURRENT_SET = 'ROOM_CURRENT_SET';
+
+export const MESSAGES_SET = 'MESSAGES_SET';
+export const MESSAGES_IS_LOADING_SET = 'MESSAGES_IS_LOADING_SET';
+export const MESSAGES_SENDING_SET = 'MESSAGES_SENDING_SET';
+
+// getters
+export const MESSAGES_GET = 'MESSAGES_GET';
+export const MESSAGES_SENDING_FILTRED_GET = 'MESSAGES_SENDING_FILTRED_GET';
+export const ROOMS_SORTED_GET = 'ROOMS_SORTED_GET';
