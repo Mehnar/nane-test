@@ -57,7 +57,7 @@
         cols="12"
       >
         <v-textarea
-          v-model="text"
+          v-model.trim.lazy="text"
           @keydown.enter="sendMessage"
           solo
           autofocus
@@ -89,7 +89,7 @@ import * as types from '@/store/types';
 import { mapState, mapGetters } from 'vuex';
 
 export default {
-  name: 'HelloWorld',
+  name: 'Chat',
 
   data: () => ({
     text: null,
