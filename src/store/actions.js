@@ -26,7 +26,7 @@ export default {
       return;
     }
 
-    const connectString = `${process.env.VUE_APP_SOCKET_HOST}?username=${state.login}`;
+    const connectString = `${process.env.VUE_APP_SOCKET_HOST}?username=${encodeURIComponent(state.login)}`;
 
     const socket = new WebSocket(connectString);
 
